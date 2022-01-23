@@ -32,4 +32,15 @@ The heuristic score function includes different type of scores inside it.
 - How many players surround each player’s king.
 - The position of the pawn on the board. The score for each pawn increases as it moves to the next position. (We keep in mind the piece promotion) .
 - The position of the knight on the board. We know that a knight is the best if it is in the middle rather than the sides.
-WE HAVE A MATRIX FOR THE KNIGHT POSITION SCORE AND THE BLACK AND WHITE PAWN POSITION SCORES.
+
+We have a matrix for the knight position score and the black and white position scores.
+
+## Overview of our implemented system:
+After researching through many chess literature articles, we came across “A History of Computer Chess” by Ben Keen. It provided a lot of good resources to represent the chess board and move generation.
+
+The representation we chose for our chess board was the Offset (or Mailbox) representation. By using this technique, we would just need a 1D array to represent our chess board.
+We chose the 10X20 grid, so it is easier to check for illegal moves.
+This is the board used in the project. You can see that it is just a 1D array.
+So, now for the move generation, we can simply take the index and add or subtract numbers from it to check for possible moves.
+For example, if had a King on index 55, then the possible moves could be;
+{44,45,46,54,56,64,65,66} then of course if an index is off the grid or our piece exists at the point, then we can remove it from the possible moves. So, we get the indexes for king by adding {-11,-10,-9,-1,1,9,10,11} to the index of the king. Each piece has it’s own set of numbers for calculating the possible moves.
