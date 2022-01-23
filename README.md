@@ -14,7 +14,7 @@ White is CAPITAL, black is lowercase. Upon running the program, it will ask you 
 - Type ai if you want to play with the computer.
 
 If you type ai , then you will be prompted how much depth is required.
-- Type an integer number. It works at 3 and really good at 5.
+- Type an integer number. It works great at depth 4, anything above that is excellent as well but more waiting time before each turn.
 - Depth 5 takes anywhere from 2 seconds to 50 seconds at max.
 
 It then asks you to type which piece do you want to move.
