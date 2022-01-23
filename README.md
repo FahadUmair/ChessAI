@@ -12,9 +12,11 @@ If you want to run it in cmd, then type ```java Chess``` to run.
 White is CAPITAL, black is lowercase. Upon running the program, it will ask you if you want to play with another player or with the computer.
 - Type two if you want the two-player mode.
 - Type ai if you want to play with the computer.
+
 If you type ai , then you will be prompted how much depth is required.
 - Type an integer number. It works at 3 and really good at 5.
 - Depth 5 takes anywhere from 2 seconds to 50 seconds at max.
+
 It then asks you to type which piece do you want to move.
 - Type something like a2 or b2, etc.
 - Make sure to give a cell which contains the piece of your own colour. Else, you will be prompted to make selection again.
